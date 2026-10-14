@@ -13,9 +13,3 @@
   </main>
 </body>
 </html>
-HTML
-git init -b main
-git add index.html
-git commit -m "TDS GA1 portfolio"
-gh repo create tds-ga1-portfolio --public --source . --push
-gh api -X POST repos/{owner}/{repo}/pages -f "source[branch]=main" -f "source[path]=/"
